@@ -2,31 +2,106 @@
 <html lang="ja">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>ckw-mod on GitHub by deflis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>ckw-mod on GitHub by ckw-mod Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        #wrap {
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+            margin: 0 auto -60px;
+        }
+
+        #wrap > .container {
+            padding-top: 60px;
+        }
+
+        #push,
+        #footer {
+          height: 60px;
+        }
+        #footer {
+          background-color: #f5f5f5;
+        }
+
+        @media (max-width: 767px) {
+            #footer {
+                margin-left: -20px;
+                margin-right: -20px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-	<h1>ckw-mod</h1>
-	<p>ckw-modとはKazuo Ishii氏が作成されたコマンドプロンプト代替ツールのckw（開発終了）のパッチを寄せ集めて、猫ロキPが独自に改造を加えたバージョンです。</p>
-	<ul>
-		<li><a href="https://github.com/ckw-mod/ckw-mod">Githubのckw-modのページ</a></li>
-	</ul>
-	<h2>ダウンロード</h2>
-	<p>以下のページからダウンロードできます。</p>
-	<ul>
-		<li><a href="ckw-mod-0.9.0-d2.zip">Download</a></li>
-	</ul>
-	<h2>マニュアル類</h2>
-	<p>マニュアル類はWikiにて整備中です。</p>
-	<ul>
-		<li><a href="https://github.com/ckw-mod/ckw-mod/wiki">Wiki</a></li>
-	</ul>
-	<h2>ライセンスなど</h2>
-	<p>ライセンスはオリジナルに則りGPLv2になっています。<br>
-	本プロジェクトはgithubにて管理されています。</p>
-
-	<p>This page is created by <a href="http://twitter.com/deflis">@deflis / 猫ロキP</a>.</p>
+    <div id="wrap">
+        <header class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="https://github.com/ckw-mod">ckw-mod</a>
+                    <nav class="nav-collapse collapse">
+                        <ul class="nav pull-right">
+                             <li class="active"><a href="http://ckw-mod.github.com/">Home</a></li>
+                            <li><a href="https://github.com/ckw-mod">Project organazation</a></li>
+                            <li><a href="https://github.com/ckw-mod/ckw-mod">Source code</a></li>
+                            <li><a href="download.html">Download</a></li>
+                            <li><a href="https://github.com/ckw-mod/ckw-mod/wiki">Wiki</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>ckw-mod</h1>
+                <p>ckw-modとはKazuo Ishii氏が作成されたコマンドプロンプト代替ツールのckw（開発終了）の開発を、有志が受け継ぎ管理しているバージョンです。</p>
+                <p><a href="./ckw-mod-0.9.0-d2.zip" class="btn btn-primary btn-large"><i class="icon-download icon-white"></i> Download latest version!</a></p>
+                <p class="btn-group"><a href="https://github.com/ckw-mod" class="btn btn-info"><i class="icon-home icon-white"></i> Github Project page &raquo;</a> <a href="https://github.com/ckw-mod/ckw-mod" class="btn btn-info"><i class="icon-tags icon-white"></i> Get source code! &raquo;</a></p>
+            </div>
+            <div class="row">
+                <div class="span4">
+                    <h2>ダウンロード</h2>
+                    <p><a href="ckw-mod-0.9.0-d2.zip" class="btn"><i class="icon-download"></i> 0.9.0-d2</a></p>
+                    <p class="pull-right"><a href="download.html">以前のバージョンはこちら &raquo;</a></p>
+                </div>
+                <div class="span4">
+                    <h2>マニュアル</h2>
+                    <p>マニュアルはWikiにて整備中です。</p>
+                    <p><a href="https://github.com/ckw-mod/ckw-mod/wiki" class="btn">Wiki &raquo;</a></p>
+                </div>
+                <div class="span4">
+                    <h2>ライセンス</h2>
+                    <p>ライセンスはオリジナルに則りGPLv2になっています。<br>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <p>このプロジェクトに参加したい場合やckw-modに未解決の問題がある等がある場合は<a href="https://github.com/ckw-mod/ckw-mod/issues">Issue Tracker</a>に気軽に書き込みをお願いします。</p>
+        </div>
+        <div id="push"></div>
+    </div>
+    <footer id="footer">
+      <div class="container">
+          <p class="muted credit">本プロジェクトはgithubにて管理されています。</p>
+      </div>
+    </footer>
 </body>
 
 </html>
